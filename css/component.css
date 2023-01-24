@@ -1,0 +1,100 @@
+@import url(style.css);
+
+/* ------------------gallery------------------------ */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-col {
+    flex-basis: 40%;
+    border-radius: 20px;
+    
+    padding: 30px;
+    background: var(--tertiry-color);
+    text-align: center;
+
+}
+
+
+.right-col {
+    flex-basis: 55%;
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--tertiry-color);
+    
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-gap: 10px;
+}
+
+.g-cards {
+    
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid var(--border-color);
+}
+
+.g-cards img {
+    width: inherit;
+    padding: 20px;
+}
+
+/* ------------------gallery------------------------ */
+/* --------------------  Process      Starts Here ------------------------  */
+.process-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    text-align: center;
+}
+
+.process-lists div img {
+    padding: 10px;
+    border-radius: 50%;
+    /* outline: 4px solid var(--highlight-color); */
+    transition: transform 0.5s;
+    z-index: 2;
+    margin-bottom: -50px;
+    background: var(--black-color);
+}
+
+.ant {
+    background: var(--tertiry-color);
+    border-radius: 10px;
+    padding: 50px 40px 40px 40px;
+    z-index: -1;
+    height: 300px;
+    
+}
+
+.ant:hover {
+    /* background: var(--primary-color); */
+    background-image: linear-gradient(rgb(189, 128, 6),var(--tertiry-color));
+    
+}
+.ant:hover h5{
+    color: var(--white-color);
+}
+
+.process-lists h5 {
+    font-weight: 600;
+    position: relative;
+    margin: 25px 0 30px 0;
+    color: var(--primary-color);
+}
+
+/* .card-2 {
+    margin-top: 50px;
+} */
+
+.flow:hover .flow-img {
+    transform: translateY(-10px);
+    outline: 4px solid var(--secondary-color);
+    background: var(--black-color);
+}
+
+
+/* --------------------  Process      ENDS Here ------------------------  */
