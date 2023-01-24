@@ -1,0 +1,44 @@
+@import url("theme.css");
+
+/* -------------------- contact starts here ---------------------------- */
+
+body{
+    box-sizing: border-box;
+}
+.gallery{
+    margin-top: 5%;
+}
+
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    
+}
+
+.g-cards {
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.g-cards h4 {
+    margin-bottom: 20px;
+}
+.g-cards img{
+   width: 300px;
+   border-radius: 20px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .contact-cards {
+        margin: 0 60px;
+    }
+}
+
+
+
